@@ -45,7 +45,7 @@ with open(args_data_path) as f:
 if "faireval" in args_data_path:
     pair_comparison_output = []
 
-    for num, ins in enumerate(data[:1]):
+    for num, ins in enumerate(data[:5]):
 
         print(f"================================instance {num}====================================")
 

@@ -20,7 +20,7 @@ prompts:
 
 environment:
   env_type: llm_eval
-  max_turns: 4
+  max_turns: 8
   rule:
     order:
       type: sequential
