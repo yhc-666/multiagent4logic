@@ -70,7 +70,7 @@ if "faireval" in args_data_path:
 
         os.makedirs(args_output_dir, exist_ok=True)
         with open(os.path.join(args_output_dir, "pair_comparison_results.json"), "w") as f:
-            json.dump(pair_comparison_output, f, indent=4)
+            json.dump(pair_comparison_output, f, indent=4, ensure_ascii=False)
     # with open(os.path.join(args_output_dir, "gt_origin_results.json"), "w") as f:
     #     json.dump(gt_origin_output, f, indent=4)
 
@@ -107,4 +107,4 @@ elif "adversarial" in args_data_path:
 
         os.makedirs(args_output_dir, exist_ok=True)
         with open(os.path.join(args_output_dir, "pair_comparison_results.json"), "w") as f:
-            json.dump(pair_comparison_output, f, indent=4)
+            json.dump(pair_comparison_output, f, indent=4, ensure_ascii=False)
